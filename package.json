@@ -1,0 +1,15 @@
+{
+  "name": "brasil_api",
+  "version": "1.0.0",
+  "description": "App de consultas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erasmo Cardoso",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "react": "^18.2.0"
+  }
+}

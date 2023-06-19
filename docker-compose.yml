@@ -1,0 +1,18 @@
+version: '1.0'
+services:
+  backend:
+    build: 
+      context: ./backend
+      dockerfile: dockerfile
+    restart: always
+    ports:
+      - 9000:9000
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: dockerfile
+    restart: always
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
