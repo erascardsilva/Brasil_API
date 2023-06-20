@@ -1,22 +1,35 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 function App() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('/backend/conectfront');
+        setData(response.data);
+      } catch (error) {
+        console.error('Erro ao conectar no Backend', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Lista de Consultas..</h1>
+        <ul>
+          {data.map((user) => (
+            <React.Fragment key={user.id}>
+              <li>{user.name}</li>
+            </React.Fragment>
+          ))}
+        </ul>
       </header>
     </div>
   );
