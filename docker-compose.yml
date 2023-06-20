@@ -7,6 +7,7 @@ services:
     restart: always
     ports:
       - 9000:9000
+  
   frontend:
     build:
       context: ./frontend
