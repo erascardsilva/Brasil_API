@@ -1,18 +1,22 @@
 const express = require ("express")
 const app = express()
-const port = 9000
+const port = 9005
+const cors = require('cors');
 
-app.get('/backend/conectfront', (req, res) => {
+app.use(cors());
+app.get('/backend/list', (req, res) => {
     
     const data = [
-      { id: 1, name: 'Usuário 1' },
-      { id: 2, name: 'Usuário 2' },
-      { id: 3, name: 'Usuário 3' },
+      { id: 1, name: 'Erasmo Cardoso' },
+      { id: 2, name: 'Jamile Raquel' },
+      { id: 3, name: 'Isabelli do Vale Silva' },
+      { id: 4, name: 'Alice do Vale Silva' },
     ];
   
     res.json(data);
   });
 
 app.listen(port , () => {
-    console.log("Conectado porta 9000")
+    console.log("Conectado porta : ", port)
 } )
+module.exports = app;
