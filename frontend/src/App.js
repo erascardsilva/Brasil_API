@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:9005/backend/list");
+        const response = await axios.get("http://localhost:9000/backend/list");
         setData(response.data);
         setConnectionStatus('Conectado com sucesso!');
       } catch (error) {

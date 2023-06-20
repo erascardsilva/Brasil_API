@@ -1,6 +1,6 @@
 const express = require ("express")
 const app = express()
-const port = 9005
+const port = 9000
 const cors = require('cors');
 
 app.use(cors());
@@ -19,4 +19,3 @@ app.get('/backend/list', (req, res) => {
 app.listen(port , () => {
     console.log("Conectado porta : ", port)
 } )
-module.exports = app;
