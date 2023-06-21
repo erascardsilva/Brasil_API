@@ -2,19 +2,21 @@ const express = require ("express")
 const app = express()
 const port = 9000
 const cors = require('cors');
+const bankb = require ('./dadaapi/apidados');
 
 app.use(cors());
-app.get('/backend/list', (req, res) => {
-    
-    const data = [
-      { id: 1, name: 'Erasmo Cardoso' },
-      { id: 2, name: 'Jamile Raquel' },
-      { id: 3, name: 'Isabelli do Vale Silva' },
-      { id: 4, name: 'Alice do Vale Silva' },
-    ];
-  
+
+
+app.get('/backend/list', async (req, res) => {
+  try {
+    const data = await bankb();
+    console.log(data); // Verifique se data é uma array
     res.json(data);
-  });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Erro ao obter dados do banco' });
+  }
+});
 
 app.listen(port , () => {
     console.log("Conectado porta : ", port)

@@ -30,7 +30,9 @@ function App() {
 
           {data.map((user) => (
             <React.Fragment key={user.id}>
+              <li>{user.code}</li>
               <li>{user.name}</li>
+              <li>{user.fullName}</li>
               
             </React.Fragment>
           ))}
