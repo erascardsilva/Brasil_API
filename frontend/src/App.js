@@ -25,15 +25,16 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Lista de Consultas..  TESTES</h1>
-        
+
         <ul>
 
-          {data.map((user) => (
-            <React.Fragment key={user.id}>
-              <li>{user.code}</li>
-              <li>{user.name}</li>
-              <li>{user.fullName}</li>
-              
+          {data.map((bank) => (
+            <React.Fragment key={bank.id}>
+              <h3> Número :  {bank.code}</h3><hr />
+              <h3> Nome do Banco :  </h3>
+              <h3> {bank.name}</h3>
+              <h3> {bank.fullName}</h3><hr />
+
             </React.Fragment>
           ))}
         </ul>
