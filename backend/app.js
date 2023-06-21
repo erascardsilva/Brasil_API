@@ -10,7 +10,7 @@ app.use(cors());
 app.get('/backend/list', async (req, res) => {
   try {
     const data = await bankb();
-    console.log(data); // Verifique se data é uma array
+    console.log(data); 
     res.json(data);
   } catch (error) {
     console.error(error);
