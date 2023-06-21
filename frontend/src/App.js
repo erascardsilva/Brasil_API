@@ -27,13 +27,12 @@ function App() {
   <h1>Lista de Consultas..  TESTES</h1>
   </div>
   <div id="item-1">
-  <center><h4>Lista</h4></center>
-        <li>Bancos</li>
-        <li>Cep</li>
-        <li>Nomes</li>
-        <li>Tempo</li>
-        <li>Animais</li>
-
+  <center><h4>Menu de consultas</h4></center> <hr />
+        <button> Bancos </button>
+        <button> Nomes </button>
+        <button> Endereços</button>
+        <button> Dolar </button>
+        <hr />
         <p id="connection-status">{connectionStatus}</p>
   </div>
   <div id="item-2">
