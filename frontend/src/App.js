@@ -22,11 +22,25 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Lista de Consultas..  TESTES</h1>
+<div class="App">
+  <div id="item-0">
+  <h1>Lista de Consultas..  TESTES</h1>
+  </div>
+  <div id="item-1">
+  <center><h4>Lista</h4></center>
+        <li>Bancos</li>
+        <li>Cep</li>
+        <li>Nomes</li>
+        <li>Tempo</li>
+        <li>Animais</li>
 
-        <ul>
+        <p id="connection-status">{connectionStatus}</p>
+  </div>
+  <div id="item-2">
+
+  <div className="App">
+      <header className="App-header">
+          <ul>
 
           {data.map((bank) => (
             <React.Fragment key={bank.id}>
@@ -38,9 +52,13 @@ function App() {
             </React.Fragment>
           ))}
         </ul>
-        <p>{connectionStatus}</p>
+        
       </header>
     </div>
+  </div>
+  
+</div>
+
   );
 }
 
