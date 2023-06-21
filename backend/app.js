@@ -7,7 +7,7 @@ const bankb = require ('./dadaapi/apidados');
 app.use(cors());
 
 
-app.get('/backend/list', async (req, res) => {
+app.get('/backend/banco', async (req, res) => {
   try {
     const data = await bankb();
     console.log(data); 
