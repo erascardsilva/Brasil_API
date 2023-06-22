@@ -22,48 +22,48 @@ function App() {
   }, []);
 
   return (
-<div class="App">
-  <div id="item-0">
-  
-   <img width={160} src="./images/apilogo.png"></img> 
-    
-    
-  </div>
-  <div id="item-1">
-  <center><h4>Brasil API consultas</h4></center> <hr />
-  <form method='post' id='busca'>
-          <input label="dadover" /> 
-  </form><hr/>
+    <div class="App">
+      <div id="item-0">
+
+        <img width={160} src="./images/apilogo.png"></img>
+
+
+      </div>
+      <div id="item-1">
+        <center><h4>Brasil API consultas</h4></center> <hr />
+        <form method='post' id='busca'>
+          <input label="dadover" />
+        </form><hr />
         <button> Bancos </button>
         <button> Nomes </button>
         <button> Endereços</button>
         <button> Dolar </button>
         <hr />
-         
+
         <p id="connection-status">{connectionStatus}</p>
-  </div>
-  <div id="item-2">
+      </div>
+      <div id="item-2">
 
-  <div className="App">
-      <header className="App-header">
-          <ul>
+        <div className="App">
+          <header className="App-header">
+            <ul>
 
-          {data.map((bank) => (
-            <React.Fragment key={bank.id}>
-              <h3> Número :  {bank.code}</h3><hr />
-              <h3> Nome do Banco :  </h3>
-              <h3> {bank.name}</h3>
-              <h3> {bank.fullName}</h3><hr />
+              {data.map((bank) => (
+                <React.Fragment key={bank.id}>
+                  <h3> Número :  {bank.code}</h3><hr />
+                  <h3> Nome do Banco :  </h3>
+                  <h3> {bank.name}</h3>
+                  <h3> {bank.fullName}</h3><hr />
 
-            </React.Fragment>
-          ))}
-        </ul>
-        
-      </header>
+                </React.Fragment>
+              ))}
+            </ul>
+
+          </header>
+        </div>
+      </div>
+
     </div>
-  </div>
-  
-</div>
 
   );
 }
