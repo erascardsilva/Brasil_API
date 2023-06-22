@@ -24,15 +24,22 @@ function App() {
   return (
 <div class="App">
   <div id="item-0">
-  <h1>Lista de Consultas..  TESTES</h1>
+  
+   <img width={160} src="./images/apilogo.png"></img> 
+    
+    
   </div>
   <div id="item-1">
-  <center><h4>Menu de consultas</h4></center> <hr />
+  <center><h4>Brasil API consultas</h4></center> <hr />
+  <form method='post' id='busca'>
+          <input label="dadover" /> 
+  </form><hr/>
         <button> Bancos </button>
         <button> Nomes </button>
         <button> Endereços</button>
         <button> Dolar </button>
         <hr />
+         
         <p id="connection-status">{connectionStatus}</p>
   </div>
   <div id="item-2">

@@ -2,7 +2,7 @@
   display: grid; 
 
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr ;
   
   gap: 0px;
   height: 100%;
@@ -11,11 +11,11 @@
 }
  
 #item-0 {
-
-  background-color: #3d3846; 
+  display: grid;
+  text-align: center;
+  background-color: #464545; 
   grid-row-start: 1;
   grid-column-start: 1;
-
   grid-row-end: 2;
   grid-column-end: 4;
   
