@@ -35,7 +35,7 @@ function App() {
           <input label="dadover" />
         </form><hr />
         <button> Bancos </button>
-        <button> Nomes </button>
+        <button> Nomes </button><hr />
         <button> Endereços</button>
         <button> Dolar </button>
         <hr />
