@@ -1,4 +1,4 @@
-# Brasil_API
+# Brasil_API (em desenvolvimento / under development)
 
 Inicio do projeto App em Node.js (backend) e React (Front)
 Busca de varias API externas
