@@ -2,13 +2,11 @@
 
 Inicio do projeto App em Node.js (backend) e React (Front)
 Busca de varias API externas
-<hr>
 Na pasta raiz do projeto digitar : <p>
 docker compose up
 <hr>  
  Beginning of the App project in Node.js (backend) and React (Front)
 Fetching various external APIs
-<hr>
 In the root folder of the project type: <p>
 docker compose up
 <hr> 
