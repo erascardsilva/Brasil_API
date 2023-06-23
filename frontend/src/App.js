@@ -40,7 +40,9 @@ function App() {
     <div className="App">
       <div id="item-0">
         <img width={160} src="./images/apilogo.png" alt="Logo"></img>
-        <hr /> <hr />
+        
+        <img width={160} src="./images/apilogo.png" alt="Logo"></img><p />
+        
         <button width={ 50 }>Bancos</button> <button width={ 50 } >Nomes</button> 
         <button width={ 50 } >Endereços</button> <button width={ 50 } >Dolar</button>
         <hr />
@@ -69,7 +71,7 @@ function App() {
               {data.map((bank) => (
                 <React.Fragment key={bank.id}>
                   <h3>Número: {bank.code}</h3>
-                  <h3>ispb : {bank.ispb}</h3>
+                  <h3>ISPB : {bank.ispb}</h3>
                   <hr />
                   <h3>Nome do Banco:</h3>
                   <h3>{bank.name}</h3>
