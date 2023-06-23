@@ -1,4 +1,4 @@
-# Brasil_API 
+![image](https://github.com/erascardsilva/Brasil_API/assets/70297459/bc635841-9d51-4a8c-a92d-37436f3f5456)![image](https://github.com/erascardsilva/Brasil_API/assets/70297459/a4ba3dc4-8c24-494d-884c-e2bf9609cf37)# Brasil_API 
 (em desenvolvimento / under development)
 
 Inicio do projeto App em Node.js (backend) e React (Front)
@@ -11,7 +11,7 @@ Fetching various external APIs
 In the root folder of the project type: <p>
 docker compose up
 <hr> 
-<img width = "800px" src="https://github.com/erascardsilva/Brasil_API/assets/70297459/2b3b303a-525d-4daf-9dc8-09f4db26f676">
+<img width = "800px" src="https://github.com/erascardsilva/Brasil_API/assets/70297459/4f088266-0c52-4552-94fd-55bd4d96ac06)">
   <hr>
-<img width = "800px" src="https://github.com/erascardsilva/Brasil_API/assets/70297459/aca3cba9-71a9-486c-9eef-ff5a58f20f8e">
+<img width = "800px" src="https://github.com/erascardsilva/Brasil_API/assets/70297459/f276faa5-7e1f-4eed-ad35-cba00c1cf5d4">
 
