@@ -1,10 +1,8 @@
 const axios = require('axios');
 
-let bankbusca = "001";
-
-const bancob = async () => {
+const bankbusca = async (nome) => {
     try {
-        const response = await axios.get(`https://brasilapi.com.br/api/banks/v1/${bankbusca}`);
+        const response = await axios.get(`https://brasilapi.com.br/api/banks/v1/${nome}`);
         return [response.data];
     } catch (error) {
         console.error(error);
@@ -12,5 +10,15 @@ const bancob = async () => {
     }
 };
 
-module.exports = bancob;
+const bancob = async () => {
+    try {
+        const response = await axios.get(`https://brasilapi.com.br/api/banks/v1/1`);
+        return [response.data];
+    } catch (error) {
+        console.error(error);
+        throw error;
+    }
+};
+
+module.exports = {bancob , bankbusca};
 
