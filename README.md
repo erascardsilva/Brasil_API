@@ -1,4 +1,4 @@
-![image](https://github.com/erascardsilva/Brasil_API/assets/70297459/bc635841-9d51-4a8c-a92d-37436f3f5456)![image](https://github.com/erascardsilva/Brasil_API/assets/70297459/a4ba3dc4-8c24-494d-884c-e2bf9609cf37)# Brasil_API 
+# Brasil_API 
 (em desenvolvimento / under development)
 
 Inicio do projeto App em Node.js (backend) e React (Front)
