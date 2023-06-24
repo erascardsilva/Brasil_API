@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import logo from './images/logo.png';
 
 function App() {
   const [data, setData] = useState([]);
@@ -40,14 +41,14 @@ function App() {
     <div className="App">
       <div id="item-0">
         <div class="logo-container">
-          <img width="160" src="./images/apilogo.png" alt="Logo" />
+          <img width="160" src={ logo } alt="Logo" />
           
         </div>
         <div class="button-container">
           <button className="custom-button">Bancos</button>
+          <button className="custom-button">Dolar</button>
           <button className="custom-button">Nomes</button>
           <button className="custom-button">Endereços</button>
-          <button className="custom-button">Dolar</button>
         </div>
       </div>
 
