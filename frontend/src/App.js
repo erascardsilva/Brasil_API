@@ -26,6 +26,7 @@ function App() {
     const fetchData = async () => {
       try {
         const response = await axios.get("http://localhost:9000/backend/banco");
+        
         //setData(response.data);
         setConnectionStatus('Conectado com sucesso!');
       } catch (error) {
