@@ -1,11 +1,13 @@
 body {
-  background-color: rgb(1, 1, 97);
+  background-image: radial-gradient(circle at 30% 21.44%,
+   #fffc7b 0, #f2ea73 25%, #d8d86c 50%,
+    #bfc665 75%, #a9b45e 100%);
 }
 
 .App {
   display: grid;
-  grid-template-rows: auto 1fr auto; 
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: auto  auto; 
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 5px;
   height: 100%;
   padding: 10px;
@@ -13,10 +15,13 @@ body {
 
 #item-0 {
   display: flex;
+  background-image: radial-gradient(circle at 8.91% 15.52%,
+   #f461e8 0, #de56eb 12.5%, #c34cee 25%,
+   #a243f0 37.5%, #783cf2 50%, #3139f4 62.5%,
+     #0038f5 75%, #003af6 87.5%, #003cf7 100%);
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: #3a4b85;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-row-end: 2;
@@ -44,29 +49,26 @@ body {
 }
 
 #item-1 {
-  background-color: #8251f5;
+  background-image: linear-gradient(180deg,
+   #a6ffff 0,
+   #a2edff 25%, #9dd5f2 50%,
+   #96bed5 75%, #8ea8b9 100%);
   grid-row-start: 2;
-  grid-column-start: 1;
-  border: 2px solid #000000;
-  
-}
+   grid-column-start: 1;
 
-#item-2 {
-  background-color: #ffffff;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  
+   grid-row-end: 3;
+   grid-column-end: 4;
   border: 2px solid #000000;
+  
 }
 
 input {
   padding: 10px;
   border: none;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 1 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
-  width: 70%;
+  width: 20%;
 }
 
 input:focus {
@@ -74,12 +76,8 @@ input:focus {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-h4 {
-  color: #ccc;
-}
-
 #connection-status {
-  color: white;
+  color: rgb(244, 7, 7);
   text-align: center;
   font-style: italic;
 }
@@ -92,7 +90,7 @@ hr {
 
 button {
   padding: 10px 20px;
-  background-color: #f8fa9a;
+  background-color: #f7f7f7;
   color: #000;
   border: none;
   border-radius: 4px;
