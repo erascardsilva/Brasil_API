@@ -11,7 +11,9 @@ Fetching various external APIs
 In the root folder of the project type: <p>
 docker compose up
 <hr> 
-<img width = "1000px" src="https://github.com/erascardsilva/Brasil_API/assets/70297459/4f088266-0c52-4552-94fd-55bd4d96ac06)">
+<img width = "1000px" src="https://github.com/erascardsilva/Brasil_API/assets/70297459/dde41134-7b6d-4f6b-b847-ceee0f92a921">
+">
   <hr>
-<img width = "1000px" src="https://github.com/erascardsilva/Brasil_API/assets/70297459/f276faa5-7e1f-4eed-ad35-cba00c1cf5d4">
+<img width = "1000px" src="https://github.com/erascardsilva/Brasil_API/assets/70297459/462ba72b-11c1-4a67-846d-8c7e2b810cdf">
+">
 
