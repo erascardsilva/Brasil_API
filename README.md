@@ -1,8 +1,8 @@
 # Brasil_API 
 (em desenvolvimento / under development)
 
-Inicio do projeto App em Node.js (backend) e React (Front)
-Busca de varias API externas
+Inicio do projeto App em Node.js (backend) e React (frontend)
+Busca de varias API externas (ate agora codigos de bancos e dados de hospedagens de sites)
 Na pasta raiz do projeto digitar : <p>
 docker compose up
 <hr>  
