@@ -60,14 +60,19 @@ function SiteMostra({ siteData }) {
             </center>
             <hr />
             <center>
-              <h3>Host: {site.hosts } | </h3>
+              <h3>Data expiração</h3>
+              <h3>{site['expires-at']}</h3>
+
             </center>
             <hr />
             <center>
-              <h3>Data expiração</h3>
+
             </center>
             <center>
-              <h3>{site['expires-at']}</h3>
+              <h3>Hosts</h3>
+              {site.hosts.map((host, index) => (
+                <h4 key={index}>{host}</h4>
+              ))}
             </center>
             <hr />
           </li>
