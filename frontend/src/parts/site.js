@@ -36,7 +36,7 @@ function SiteBusca() {
             type="text"
             value={formData}
             onChange={(e) => setFormData(e.target.value)}
-            placeholder="Digite o site"
+            placeholder="Digite o site aqui"
           />
           <center>
             <button type="submit">Buscar Site</button>
