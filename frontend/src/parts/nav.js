@@ -14,7 +14,14 @@ function MenuB() {
                 <Link to="/bankdata" title="Banco">
                     <button className="custom-button"> Bancos </button>
                 </Link>
+<<<<<<< HEAD
                 
+=======
+                <Link to="/sitebusca" title="Site">
+                    <button className="custom-button"> Site Busca </button>
+                </Link>
+                <button className="custom-button">Sites</button>
+>>>>>>> 858f61b (update)
                 <button className="custom-button">Dolar</button>
                 <button className="custom-button">Endereços</button>
             </div>
