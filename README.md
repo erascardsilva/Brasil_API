@@ -15,5 +15,4 @@ docker compose up
 ">
   <hr>
 <img width = "1000px" src="https://github.com/erascardsilva/Brasil_API/assets/70297459/462ba72b-11c1-4a67-846d-8c7e2b810cdf">
-">
 
