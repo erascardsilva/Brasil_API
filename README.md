@@ -2,12 +2,12 @@
 (em desenvolvimento / under development)
 
 Inicio do projeto App em Node.js (backend) e React (frontend)
-Busca de varias API externas (ate agora codigos de bancos e dados de hospedagens de sites)
+Busca de varias API externas (ate agora codigos de bancos e dados de hospedagens de sites)<p>
 Na pasta raiz do projeto digitar : <p>
 docker compose up
 <hr>  
- Beginning of the App project in Node.js (backend) and React (Front)
-Fetching various external APIs
+ Beginning of the App project in Node.js (backend) and React (Front)<p>
+Fetching various external APIs (until now bank codes and website hosting data)
 In the root folder of the project type: <p>
 docker compose up
 <hr> 
