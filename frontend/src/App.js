@@ -5,6 +5,8 @@ import MenuB from './parts/nav';
 import BankStart from './parts/banks';
 import HomeStart from './parts/home';
 import DashB from './parts/banks';
+import SiteBusca from './parts/site';
+import { SiteMostra } from './parts/site';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
             <Route path="/" element={<HomeStart />} />
             <Route path="/bankdata" element={<BankStart />} />
             <Route path="/dash" element={<DashB />} />
+            <Route path="/sitebusca" element={<SiteBusca />} />
+            <Route path='/ste' element={<SiteMostra />} />
 
           </Routes>
         </div>

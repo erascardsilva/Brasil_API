@@ -1,36 +1,17 @@
-
 const express = require("express");
 const app = express();
 const port = 9000;
 const cors = require('cors');
-const { bancob, bankbusca } = require('./dadaapi/apidados');
+const bancoRoutes = require('./routes/banco');
+const bancoApiRoutes = require('./routes/bancoapi');
+const siteRoutes = require('./routes/sitedata');
 
 app.use(cors());
 app.use(express.json()); 
 
-app.get('/backend/banco', async (req, res) => {
-  try {
-    const data = await bancob();
-    console.log(data);
-    res.json(data);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Erro ao obter dados do banco' });
-  }
-});
-
-app.post('/backend/bancoapi', async (req, res) => {
-  const { name } = req.body; 
-  
-  try {
-    const data = await bankbusca(name);
-    console.log(data);
-    res.json(data);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Erro ao buscar dados no banco' });
-  }
-});
+app.use('/backend/banco', bancoRoutes);
+app.use('/backend/bancoapi', bancoApiRoutes);
+app.use('/backend/sitebusca', siteRoutes);
 
 app.listen(port, () => {
   console.log("Conectado na porta:", port);
