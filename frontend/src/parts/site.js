@@ -60,7 +60,7 @@ function SiteMostra({ siteData }) {
             </center>
             <hr />
             <center>
-              <h3>Host: {site.hosts}</h3>
+              <h3>Host: {site.hosts } | </h3>
             </center>
             <hr />
             <center>
