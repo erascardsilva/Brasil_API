@@ -6,18 +6,26 @@ function SiteBusca() {
   const [formData, setFormData] = useState('');
   const [connectionStatus, setConnectionStatus] = useState('');
   const [siteData, setSiteData] = useState([]);
+  const [error, setError] = useState('');
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
+    if (/^\d+$/.test(formData)) {
+      setError('Digite um site válido.');
+      return;
+    }
 
     try {
       const response = await axios.post("http://localhost:9000/backend/sitebusca", { name: formData });
       console.log(response.data);
       setSiteData(response.data);
       setConnectionStatus('Conectado com sucesso!');
+      setError('');
     } catch (error) {
       console.error('Erro ao conectar no Backend', error);
       setConnectionStatus('Erro ao buscar dados no banco');
+      setError('');
     }
   };
 
@@ -42,6 +50,7 @@ function SiteBusca() {
             <button type="submit">Buscar Site</button>
           </center>
         </form>
+        {error && <p id="error-message">{error}</p>}
       </center>
       <hr />
       <SiteMostra siteData={siteData} connectionStatus={connectionStatus} />
@@ -62,12 +71,8 @@ function SiteMostra({ siteData }) {
             <center>
               <h3>Data expiração</h3>
               <h3>{site['expires-at']}</h3>
-
             </center>
             <hr />
-            <center>
-
-            </center>
             <center>
               <h3>Hosts</h3>
               {site.hosts.map((host, index) => (
@@ -84,4 +89,3 @@ function SiteMostra({ siteData }) {
 
 export { SiteMostra };
 export default SiteBusca;
-

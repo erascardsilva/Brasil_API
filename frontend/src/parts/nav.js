@@ -18,7 +18,7 @@ function MenuB() {
                     <button className="custom-button">Site Dados</button>
                 </Link>
                 <button className="custom-button">Dolar</button>
-                <button className="custom-button">Endereços</button>
+                <button className="custom-button">Bitcoin</button>
             </div>
         </>
     );

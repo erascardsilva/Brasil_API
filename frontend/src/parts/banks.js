@@ -52,13 +52,13 @@ function BankStart() {
 function DashB({ bankData, connectionStatus }) {
   return (
     <div>
-    
+
       <ul>
         {bankData.map((bank) => (
           <li key={bank.id} >
             <center><h3>Número: {bank.code}  |  ISPB: {bank.ispb}</h3></center>
             <hr />
-           <center><h3>Nome do Banco:  {bank.name}</h3></center>
+            <center><h3>Nome do Banco:  {bank.name}</h3></center>
             <hr />
             <center><h3>Nome completo do Banco </h3></center>
             <center><h3>{bank.fullName}</h3></center>
@@ -66,7 +66,7 @@ function DashB({ bankData, connectionStatus }) {
           </li>
         ))}
       </ul>
-      
+
     </div>
   );
 }
