@@ -10,10 +10,10 @@ function MenuB() {
                     <img width="160" src={logo} alt="Logo" />
                 </Link>
             </div>
-            <Link to="/bitcoin" title="Bitcoin">
-                <button className="custom-button">Bitcoin</button>
-            </Link>
             <div className="button-container">
+                <Link to="/bitcoin" title="Bitcoin">
+                    <button className="custom-button">Bitcoin</button>
+                </Link>
                 <Link to="/bankdata" title="Banco">
                     <button className="custom-button"> Bancos </button>
                 </Link>
