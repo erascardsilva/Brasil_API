@@ -64,6 +64,9 @@ function BitcoinDetails({ bitcoinData }) {
                         <hr />
                         <h3>Rank</h3>
                         <h3>{bitcoinData.rank}</h3>
+                        <h3>Fonte</h3>
+                        <h3><a href="https://www.blockchain.com/explorer">{bitcoinData.explorer}</a></h3>
+
                     </center>
                 </li>
             </ul>
