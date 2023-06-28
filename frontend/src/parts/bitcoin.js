@@ -56,17 +56,12 @@ function BitcoinDetails({ bitcoinData }) {
                     <center>
                         <h3>Nome: {bitcoinData.name} </h3>
                         <h3>ID: {bitcoinData.id}</h3>
-                    </center>
-                    <hr />
-                    <center>
+                        <hr />
                         <h3>Preço</h3>
                         <h3>{formattedPrice}</h3>
-
                         <h3>Variação em 24HRS</h3>
                         <h3>{formattedVar24}</h3>
-                    </center>
-                    <hr />
-                    <center>
+                        <hr />
                         <h3>Rank</h3>
                         <h3>{bitcoinData.rank}</h3>
                     </center>
