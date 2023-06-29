@@ -1,3 +1,8 @@
+/*FRONTEND    
+    App desenvolvido por
+                       Erasmo Cardoso
+                                Objetivo acessar dados de APIS externas */ 
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';

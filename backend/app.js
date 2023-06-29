@@ -1,3 +1,8 @@
+/*BACKEND    
+    App desenvolvido por
+                       Erasmo Cardoso
+                                Objetivo acessar dados de APIS externas */ 
+
 const express = require("express");
 const app = express();
 const port = 9000;
