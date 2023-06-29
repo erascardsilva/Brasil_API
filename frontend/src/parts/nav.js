@@ -20,7 +20,9 @@ function MenuB() {
                 <Link to="/sitebusca" title="Site">
                     <button className="custom-button">Site Dados</button>
                 </Link>
+                <Link to="/dolar" title="Dolar">
                 <button className="custom-button">Dolar</button>
+                </Link>
 
             </div>
         </>
