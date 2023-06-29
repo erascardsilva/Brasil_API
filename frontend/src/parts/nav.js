@@ -11,6 +11,9 @@ function MenuB() {
                 </Link>
             </div>
             <div className="button-container">
+                <Link to="/dolar" title="Dolar">
+                    <button className="custom-button">Dolar</button>
+                </Link>
                 <Link to="/bitcoin" title="Bitcoin">
                     <button className="custom-button">Bitcoin</button>
                 </Link>
@@ -18,10 +21,7 @@ function MenuB() {
                     <button className="custom-button"> Bancos </button>
                 </Link>
                 <Link to="/sitebusca" title="Site">
-                    <button className="custom-button">Site Dados</button>
-                </Link>
-                <Link to="/dolar" title="Dolar">
-                <button className="custom-button">Dolar</button>
+                    <button className="custom-button">Dados Sites</button>
                 </Link>
 
             </div>
