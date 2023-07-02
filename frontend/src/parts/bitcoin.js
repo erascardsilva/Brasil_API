@@ -36,7 +36,7 @@ function BitcoinStart() {
 
 function BitcoinDetails({ bitcoinData }) {
     if (!bitcoinData) {
-        return <p>Nenhum dado de Bitcoin disponível</p>;
+        return <center><p>Nenhum dado de Bitcoin disponível  AGUARDANDO....</p></center>;
     }
     const formattedPrice = new Intl.NumberFormat('pt-BR', {
         style: 'currency',
