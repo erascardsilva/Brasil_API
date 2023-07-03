@@ -1,7 +1,7 @@
-/*BACKEND    
+/* BACKEND    
     App desenvolvido por
                        Erasmo Cardoso
-                                Objetivo acessar dados de APIS externas */ 
+                                Objetivo acessar dados de APIS externas */
 
 const express = require("express");
 const app = express();
