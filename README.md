@@ -1,5 +1,5 @@
 # Brasil_API 1.0
-Consultas tempo real (Bitcoin | Bancos | Sites | Dolar)
+Consultas tempo real ( Bitcoin |  Bancos | Dolar | Sites  )
 
 Inicio do projeto App em Node.js (backend) e React (frontend)
 Busca de varias API externas (ate agora codigos de bancos e dados de hospedagens de sites)<p>
