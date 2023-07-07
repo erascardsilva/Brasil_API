@@ -23,6 +23,9 @@ function MenuB() {
                 <Link to="/sitebusca" title="Site">
                     <button className="custom-button">Dados Sites</button>
                 </Link>
+                <Link to="/feriaBusca" title="Site">
+                    <button className="custom-button">Feriados Busca</button>
+                </Link>
 
             </div>
         </>

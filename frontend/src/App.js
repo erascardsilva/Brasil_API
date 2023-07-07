@@ -1,7 +1,8 @@
 /*FRONTEND    
     App desenvolvido por
                        Erasmo Cardoso
-                                Objetivo acessar dados de APIS externas */ 
+                                Objetivo acessar dados de APIS externas */
+
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -13,6 +14,7 @@ import DashB from './parts/banks';
 import SiteBusca from './parts/site';
 import BitcoinStart from './parts/bitcoin';
 import DolarStart from './parts/dolar';
+import FeriaStart from './parts/feriad';
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
             <Route path="/sitebusca" element={<SiteBusca />} />
             <Route path="/bitcoin" element={<BitcoinStart />} />
             <Route path="/dolar" element={<DolarStart />} />
+            <Route path="/feriaBusca" element={<FeriaStart />} />
           </Routes>
         </div>
       </div>

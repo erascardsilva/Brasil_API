@@ -3,8 +3,6 @@ const router = express.Router();
 
 const { bankbusca } = require('../dadaapi/apidados');
 
-
-
 router.post('/', async (req, res) => {
     const { name } = req.body; 
     
